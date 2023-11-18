@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Currículo - Sabrina Barros</title>
+
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles/curriculo.css">
+		<script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+	</head>
+
+
+	<body>
+	    <nav>
+
+			<ul class="menu">
+			  
+			  <li class="logo"><img src="images/SabrinaBarros.png"></li>
+			  <li class="item"><a href="index.html" title="Home">Home</a></li>
+			  <li class="item"><a href="curriculo.html" title="Curriculo">Curriculo</a></li>
+			  <li class="item"><a href="index.html #contato" title="Contato">Contato</a></li></li>
+			  <li class="item"><a href="index.html #skills" title="Portifolio">Portifolio</a></li></li>
+			  <li class="item button"><a href="#" title="CV" onclick="gerarPdf()"><i class="icon icon-plug"></i> Baixar CV</a></li>
+			  <li class="toggle"><span class="bars"></span></li>
+			
+			</ul>
+			
+		  </nav>
+        <div class="curriculo" id="conteudo-curriculo">
+            <div class="__curriculo-header">
+                <h1 class="curriculo-titulo">Currículo</h1>
+                <h2 class="curriculo-subtitulo">Dados Pessoais</h2>
+                <hr>
+            </div>
+            <div class="curriculo-informacoes">
+                <div class="_sessao1">
+                    <img src="images/profile.png"class="__sessao1-img">
+					<div class="__sessao1-texto">
+                    <h3>Nome:</h3>
+					    <p>Sabrina Regina de Barros</p>
+					    <h3>Data de Nascimento:</h3>
+					    <p>23/04/2003</p>
+					<h3>Residência:</h3>
+					    <p>Guareí SP, Brasil</p>
+					
+					</div>
+                </div>
+						
+			<div class="_sessao2">
+                <h2 class="__sessao-titulo">Sobre Mim</h2>
+				    <p>Sou uma jovem em busca da primeira oportunidade como desenvolvedora de software, atualmente busco me aperfeiçoar na area, tenho conhecimentos de HTML, CSS, Bootstrap, JavaScript, React, Typescript e Flutter</p>
+					
+            </div>
+			<div class="_sessao3">
+                <h2 class="__sessao-titulo">Educação</h2>
+				    <h3>2021-Em andamento</h3>
+						<p>Análise e desenvolvimento de sistemas - Fatec </p>
+					<h3>2019-2020</h3>
+						<p>Técnico em desenvolvimento de sistemas - Etec Sales Gomes</p>
+				
+                    </div>
+					
+			<div class="_sessao4">
+                <h2 class="__sessao-titulo">Habilidades</h2>
+				    <h3>Soft Skills</h3>
+						<p>Comunicação, Trabalho em equipe, Autodidata</p>
+					<h3>Hard Skills</h3>
+							<p>HTML, CSS, JavaScript, React.js, Flutter, Figma, Ux Design</p>
+				
+                </div>
+			<div class="_sessao5">
+                <h2 class="__sessao-titulo">Experiência de Trabalho</h2>
+					<h3>Jan 2022 - Jul 2023</h3>
+						<p>Vendedora - flor do campo essencias </p>
+				
+            </div>
+		
+			<div class="_sessao6">
+			    <h2 class="__sessao-titulo">Contato</h2>
+                    <p>sabrinareginadebarros@gmail.com</p>
+                    <p>(15)998376114</p>
+
+            </div>
+        </div>
+     </div>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script>
+	function gerarPdf() {
+    var element = document.getElementById('conteudo-curriculo');
+
+    html2pdf(element, {
+        margin: 15,
+        filename: 'curriculo.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    });
+}</script>
+<script>
+    
+
+    $(function() {
+        
+        $(".toggle").on("click", function() {
+            if ($(".item").hasClass("active")) {
+                $(".item").removeClass("active");
+            } else {
+                $(".item").addClass("active");
+            }
+        });
+
+    });
+
+</script>
+    </body>
+
+</html>

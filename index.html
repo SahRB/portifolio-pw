@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" type="imagex/png" href="images/devlogo.ico">
+    <title>Sabrina Barros</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+          <li class="logo"><img src="images/SabrinaBarros.png"></li>
+          <li class="item"><a href="#" title="Home">Home</a></li>
+          <li class="item"><a href="curriculo.html" title="Curriculo">Curriculo</a></li>
+          <li class="item"><a href="#contato" title="Contato">Contato</a></li></li>
+          <li class="item"><a href="#skills" title="Portifolio">Portifolio</a></li></li>
+          <li class="item button"><a href="curriculo.html" title="CV"><i class="icon icon-plug"></i> Baixar CV</a></li>
+          <li class="toggle"><span class="bars"></span></li>
+        </ul>
+      </nav>
+    <div class="info">
+        <img src="images/banner.svg" class="banner" >
+    </div>
+
+    <section id="skills">
+        <h2>O que posso oferecer?</h2>
+        <div class="galeria skills-img" id="img1"></div>
+        <div class="galeria skills-img" id="img2"></div>
+        <div class="galeria skills-img" id="img3"></div>
+        <div class="galeria skills-img" id="img4"></div>   
+    </section>
+    
+    <h2>Portifolio</h2>
+        <div class="portifolio cards">
+            <section class="card ">
+                <div class="imagem-card">
+                    <img src="images/alura.png" alt="Contact us.">
+                </div>
+                 <h3>Alura Books</h3>
+                <span>HTML e CSS.</span>
+                <a href="projetos.html #books">
+                    <button>
+                       
+                        Ver Projeto</button>
+                    </a>
+            </section>
+            <section class="card ">
+                <div class="imagem-card">
+                    <img src="images/ignite.png" alt="Contact us.">
+                </div>
+                <h3>Plataforma de evento</h3>
+                <span>React.js, Typescript, Tailwindcss, Graphql, Graphcms, Apollo.</span>
+                <a href="projetos.html #evento">
+                    <button>
+                       
+                        Ver Projeto</button>
+                    </a>
+            </section>
+            <section class="card ">
+                <div class="imagem-card">
+                    <img src="images/voll-capa.png" alt="Contact us.">
+                </div>
+                <h3>Aplicativo médico</h3>
+                <span>React Native, Native base, integração com API.</span>
+                
+                <a href="projetos.html #voll">
+                    <button>
+                       
+                        Ver Projeto</button>
+                    </a>
+            </section>
+            <section class="card ">
+                <div class="imagem-card">
+                    <img src="images/mercearia-1.png" alt="Contact us.">
+                </div>
+                <h3>Cadastro de clientes, pedidos e produtos</h3>
+                <span>HTML, CSS, MySql e Php.</span>
+                <a href="projetos.html #mercearia">
+                <button>
+                   
+                    Ver Projeto</button>
+                </a>
+            </section>
+        </div>
+    </section>
+    <section id="contato">
+        <h2>Meu contato</h2>
+        <div class="contato">
+            <h4>Email</h4>
+            <a href="">sabrinareginadebarros@gmail.com</a>
+            <h4>Telefone</h4>
+            <a href="">(15) 998-3766114</a>
+        </div>
+        <div class="contato-botoes">
+            <button>Linkedin <i class="fa-brands fa-linkedin" style="color: #52489C;"></i></button>
+            <button>Github <i class="fa-brands fa-github-alt" style="color: #52489C;"></i></button>
+             <button>Whatsapp <i class="fa-brands fa-square-whatsapp" style="color: #52489C;"></i></button>
+        </div>
+    </section>
+        <script src="https://kit.fontawesome.com/bd11e9bfee.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<footer>Projeto de programação web</footer>
+<script>
+    
+
+    $(function() {
+        
+        $(".toggle").on("click", function() {
+            if ($(".item").hasClass("active")) {
+                $(".item").removeClass("active");
+            } else {
+                $(".item").addClass("active");
+            }
+        });
+
+    });
+
+
+
+</script>
+</body>
+</html>

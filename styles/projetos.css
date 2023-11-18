@@ -1,0 +1,36 @@
+@import url("global.css");
+
+header{
+    margin: 20px;
+}
+header i{
+    margin-right:10px;
+    color: var (--rosa);
+}
+header a{
+    color: var(--rosa);
+    font-weight: bold;
+}
+.sobre{
+    margin: 20vh;
+}
+.imagens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imagens img{
+    width: 100vh;
+    margin-bottom: 10vh;
+}
+@media screen and (max-width: 768px) {
+    .imagens img{
+        width: 40vh;
+        margin-bottom: 10vh;
+    }
+    .sobre{
+        margin: 5vh;
+    }
+
+}

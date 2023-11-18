@@ -1,0 +1,32 @@
+@import url("global.css");
+
+.curriculo{
+    margin: 5vh;
+}
+.curriculo-informacoes{
+
+}
+hr {
+    border: none; /* Remove a borda padrão do <hr> */
+    height: 2px; /* Define a altura da linha horizontal */
+    background: linear-gradient(to right,var(--azul), #FFC7D9); /* Adiciona um gradiente linear da esquerda para a direita */
+}
+.__sessao1-img {
+    width: 22vh; /* Adicionei uma largura para garantir que o elemento tenha conteúdo visível */
+    height: 30vh;
+    border: 5px solid transparent; /* Ajustei a borda para ter uma cor transparente para evitar sobreposição de cores com o gradiente */
+    border-image: linear-gradient(to right,var(--rosa), #FFC7D9);
+    border-image-slice: 1;/* Reduzi para 50% para ter bordas arredondadas visíveis */
+    overflow: hidden; 
+}
+.__sessao1-texto{
+    font-size: 2vh;
+}
+._sessao1{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2vh;
+}
+.__sessao-titulo{
+    color: var(--rosa);
+}
